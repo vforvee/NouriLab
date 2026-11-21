@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Account | NouriLab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="auth.css">
+  <link rel="stylesheet" href="/assets/theme.css">
+</head>
+<body>
+  <div class="brand-loader" id="brandLoader" aria-label="Loading NouriLab">
+    <div class="loader-brand"><b>N</b><span>NouriLab</span></div>
+    <div class="loader-track" aria-hidden="true"><span></span></div>
+  </div>
+  <button id="themeToggle" class="theme-toggle auth-theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode" aria-pressed="false">☾</button>
+  <main class="auth-shell">
+    <section class="auth-story" aria-label="NouriLab introduction">
+      <a class="brand" href="/auth.html">
+        <b>N</b>
+        <span>NouriLab<small>DISCOVER. ANALYSE. FORMULATE.</small></span>
+      </a>
+      <div class="story-copy">
+        <small>THE SCIENCE OF WHAT'S NEXT</small>
+        <h1>Better food starts with discovery.</h1>
+        <p>Sign in to explore ingredients, compare applications and save blend concepts.</p>
+      </div>
+    </section>
+
+    <section class="auth-card">
+      <div class="tabs" role="tablist" aria-label="Account options">
+        <button class="tab" id="loginTab" type="button" role="tab">Log in</button>
+        <button class="tab active" id="signupTab" type="button" role="tab">Sign up</button>
+      </div>
+      <h2 id="authTitle">Create your account.</h2>
+      <p class="subtitle" id="authSubtitle">Start exploring and saving your ingredient ideas.</p>
+      <form id="authForm">
+        <div id="nameGroup">
+          <label for="name">Your name</label>
+          <input id="name" name="name" autocomplete="name" placeholder="Your name" minlength="2" maxlength="160">
+        </div>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" autocomplete="new-password" minlength="8" maxlength="128" required>
+        <button class="submit" id="authSubmit" type="submit">Create account</button>
+        <p class="message" id="authMessage" role="alert"></p>
+      </form>
+    </section>
+  </main>
+  <script src="/assets/theme.js"></script>
+  <script src="/auth.js"></script>
+</body>
+</html>

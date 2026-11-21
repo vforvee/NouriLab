@@ -1,0 +1,2 @@
+GEMINI_API_KEY="AQ.Ab8RN6J1F7NShtr9ThdISWl5CMMf152ZhcnifXmiyowZhdXiAQ"
+GEMINI_MODEL=gemini-3.5-flash-lite

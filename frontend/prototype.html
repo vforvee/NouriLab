@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NouriLab | Ingredient Intelligence</title>
+<link rel="stylesheet" href="assets/theme.css">
+<style>
+:root{--ink:#17251d;--muted:#66756b;--paper:#f7f6ef;--card:#fffefa;--green:#174c35;--lime:#d9f36a;--line:#e3e6da;--orange:#f28b55;--soft:#edf2e8}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}.shell{max-width:1150px;margin:auto;padding:25px 22px 60px}nav{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding:8px 0 22px}.brand{font-size:1.25rem;font-weight:850;letter-spacing:-.04em;display:flex;gap:10px;align-items:center}.mark{background:var(--green);color:var(--lime);width:35px;height:35px;border-radius:12px;display:grid;place-items:center}.navtag,.eyebrow,.step{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:var(--muted)}.hero{padding:48px 0 30px;display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:end}h1{font-size:clamp(2.5rem,6vw,4.8rem);line-height:.98;letter-spacing:-.065em;margin:14px 0 17px}h1 span{color:var(--green)}.hero p{color:var(--muted);line-height:1.7;max-width:650px}.note{background:var(--lime);border-radius:22px;padding:22px;transform:rotate(1deg)}.note p{color:#31412d;font-size:.9rem}.panel{background:var(--card);border:1px solid var(--line);border-radius:23px;padding:25px;box-shadow:0 16px 45px #1830220d}.head{display:flex;justify-content:space-between;gap:15px;margin-bottom:22px}.head h2{margin:5px 0;font-size:1.4rem;letter-spacing:-.04em}.head p{margin:5px 0;color:var(--muted);font-size:.9rem}.pill{display:inline-block;background:#eef2e8;color:#35523e;border-radius:30px;padding:7px 11px;font-size:.73rem;font-weight:800}.grid{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:14px}.field label{display:block;font-size:.8rem;font-weight:750;margin-bottom:8px}.field input,.field select{width:100%;padding:14px;border:1px solid #d8ded2;border-radius:12px;background:white;color:var(--ink);font:inherit}.field input:focus,.field select:focus{outline:2px solid #b9d77c}.actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:18px}.primary,.secondary{border:0;border-radius:12px;padding:13px 19px;font-weight:800}.primary{background:var(--green);color:white}.primary:disabled{opacity:.6}.secondary{background:white;border:1px solid var(--line)}.small{font-size:.77rem;color:var(--muted);line-height:1.5}.status{display:none;margin-top:16px;padding:12px 14px;border-radius:11px;background:var(--soft);color:#35523e;font-size:.85rem}.status.show{display:block}.status.error{background:#fff0e9;color:#8b3b1c}.results{display:none;margin-top:28px}.results.show{display:block}.resultsTop{display:flex;justify-content:space-between;align-items:end;margin:28px 0 14px;gap:15px}.resultsTop h2{margin:5px 0;font-size:1.8rem;letter-spacing:-.05em}.cols{display:grid;grid-template-columns:1fr 1fr;gap:15px}.card{background:var(--card);border:1px solid var(--line);border-radius:19px;padding:20px}.card h3{margin:0 0 14px;font-size:1.05rem}.property{display:flex;justify-content:space-between;gap:10px;padding:11px 0;border-bottom:1px solid var(--line)}.property:last-child{border:0}.property strong{font-size:.86rem}.property span{font-size:.75rem;color:var(--muted);text-align:right}.assessment{background:#f0f4e9;border-radius:15px;padding:16px}.assessment p{font-size:.86rem;line-height:1.6;color:#47594a}.warning{border-left:3px solid var(--orange);padding:10px 12px;background:#fff6ef;border-radius:0 9px 9px 0;color:#70452f;font-size:.78rem;line-height:1.55;margin-top:13px}.papers{display:grid;gap:11px}.paper{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:15px}.paper h4{font-size:.9rem;line-height:1.4;margin:0 0 7px}.paper p{font-size:.78rem;color:var(--muted);line-height:1.55;margin:5px 0}.paper a{display:inline-block;margin-top:8px;color:var(--green);font-size:.78rem;font-weight:800;text-decoration:none}.empty{border:1px dashed #cbd4c7;border-radius:13px;padding:20px;text-align:center;color:var(--muted);font-size:.85rem}footer{display:flex;justify-content:space-between;gap:15px;border-top:1px solid var(--line);margin-top:38px;padding-top:18px;color:var(--muted);font-size:.74rem}
+@media(max-width:760px){.shell{padding:15px}.hero,.grid,.cols{grid-template-columns:1fr}.hero{padding-top:35px}.note{transform:none}.panel{padding:18px}.resultsTop{align-items:flex-start;flex-direction:column}footer{flex-direction:column}}
+</style></head>
+<body class="prototype-page"><div class="shell">
+<nav><div class="brand"><div class="mark">N</div>NouriLab</div><div class="navtag">Ingredient intelligence</div><button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode" aria-pressed="false">☾</button></nav>
+<header class="hero"><div><div class="eyebrow">Discover what ingredients can do</div><h1>Know your ingredient. <span>Find its potential.</span></h1><p>Search scientific literature for an ingredient's nutritional and techno functional properties, then explore how the available evidence aligns with the plant-based food you want to create.</p></div><aside class="note"><strong>Research first. Formulate smarter.</strong><p>NouriLab searches scholarly records and makes its evidence visible. Missing measurements are never presented as facts.</p></aside></header>
+<section class="panel"><div class="head"><div><div class="step">01 / Ingredient search</div><h2>What ingredient are you exploring?</h2><p>Try a local crop, seed, pulse or established protein ingredient.</p></div></div>
+<div class="grid">
+<div class="field"><label for="ingredient">Ingredient name</label><input id="ingredient" value="Bambara groundnut" placeholder="e.g. African yam bean"></div>
+<div class="field"><label for="application">Target food application</label><select id="application"><option>Plant-based meat</option><option>Plant-based milk</option><option>Plant-based yoghurt</option><option>Plant-based cheese</option><option>Protein beverage</option><option>Bakery product</option><option>Any application</option></select></div>
+<div class="field"><label for="form">Ingredient form</label><select id="form"><option>Any form</option><option>Whole seed or grain</option><option>Flour</option><option>Defatted flour</option><option>Protein concentrate</option><option>Protein isolate</option></select></div></div>
+<div class="actions"><button class="primary" id="searchBtn" onclick="searchIngredient()">Search research ↗</button><button class="secondary" onclick="loadExample()">Try another example</button><span class="small">Uses OpenAlex scholarly records.</span></div><div id="status" class="status" role="status" aria-live="polite"></div></section>
+<section id="results" class="results"><div class="resultsTop"><div><div class="step">02 / Research findings</div><h2 id="resultTitle">Ingredient report</h2><div id="resultMeta" class="small"></div></div><span id="paperCount" class="pill"></span></div>
+<div class="cols"><div class="card"><h3>Functional property evidence</h3><div id="properties"></div><div class="warning">A property is listed when mentioned in retrieved scholarly titles or abstracts. This is a literature signal, not proof of a measured value. Verify original methods, units and results.</div></div><div class="card"><h3>Application suitability review</h3><div id="assessment" class="assessment"></div><h3 style="margin-top:18px">Nutrition and ingredient context</h3><p class="small">Exact protein, fat and amino acid values require a verified composition source. They are not invented from paper search results.</p></div></div>
+<div class="resultsTop"><div><div class="step">03 / Traceable sources</div><h2>Research records</h2></div></div><div id="papers" class="papers"></div></section>
+<footer><span>© NouriLab · Discover. Analyse. Formulate.</span><span>Research support tool. Verify original studies before formulation decisions.</span></footer></div>
+<script src="assets/theme.js"></script>
+<script>
+/*
+ NOURILAB INGREDIENT INTELLIGENCE
+ Editable single-file front-end.
+ Data source: OpenAlex Works API: https://api.openalex.org/works
+ Searches metadata and abstracts only. It does not extract full-paper tables
+ or claim abstract mentions are verified numerical measurements.
+*/
+const PROPERTY_TERMS={
+ "Water-holding / water-absorption capacity":["water holding","water-holding","water absorption","water-absorption","wac","whc"],
+ "Oil-holding / oil-absorption capacity":["oil holding","oil-holding","oil absorption","oil-absorption","oac","ohc"],
+ "Protein solubility":["solubility","soluble protein","protein solubility"],
+ "Emulsifying properties":["emulsif","emulsion activity","emulsion stability"],
+ "Foaming properties":["foaming","foam capacity","foam stability"],
+ "Gelation / gel strength":["gelation","gel strength","gelling","gel-forming"],
+ "Viscosity / rheology":["viscosity","rheological","rheology"],
+ "Protein composition":["protein content","crude protein","protein composition","amino acid"]
+};
+const NEEDS={
+ "Plant-based meat":["Water-holding / water-absorption capacity","Emulsifying properties","Gelation / gel strength","Viscosity / rheology"],
+ "Plant-based milk":["Protein solubility","Emulsifying properties","Viscosity / rheology"],
+ "Plant-based yoghurt":["Protein solubility","Gelation / gel strength","Viscosity / rheology","Water-holding / water-absorption capacity"],
+ "Plant-based cheese":["Emulsifying properties","Gelation / gel strength","Water-holding / water-absorption capacity","Protein solubility"],
+ "Protein beverage":["Protein solubility","Viscosity / rheology","Emulsifying properties"],
+ "Bakery product":["Water-holding / water-absorption capacity","Foaming properties","Gelation / gel strength","Viscosity / rheology"],
+ "Any application":Object.keys(PROPERTY_TERMS)
+};
+const $=id=>document.getElementById(id);
+function status(message,error=false){$("status").textContent=message;$("status").className="status show"+(error?" error":"");}
+function normalize(work){
+ const abstract=work.abstract_inverted_index?Object.entries(work.abstract_inverted_index).flatMap(([word,pos])=>pos.map(i=>[i,word])).sort((a,b)=>a[0]-b[0]).map(x=>x[1]).join(" "):"";
+ return {title:work.title||"Untitled research record",year:work.publication_year||"Year not listed",url:work.doi||work.primary_location?.landing_page_url||work.id||"",abstract,authors:(work.authorships||[]).slice(0,3).map(a=>a.author?.display_name).filter(Boolean).join(", ")};
+}
+async function fetchResearch(query){
+ const url=new URL("https://api.openalex.org/works");url.searchParams.set("search",query);url.searchParams.set("per-page","25");url.searchParams.set("sort","relevance_score:desc");url.searchParams.set("select","id,title,publication_year,doi,primary_location,authorships,abstract_inverted_index");
+ const response=await fetch(url);if(!response.ok)throw new Error("Scholarly search service returned status "+response.status+". Try again shortly.");const data=await response.json();return(data.results||[]).map(normalize);
+}
+function mentions(records){
+ const all=records.map(r=>(r.title+" "+r.abstract).toLowerCase()).join(" ");
+ return Object.entries(PROPERTY_TERMS).map(([name,terms])=>({name,records:records.filter(r=>terms.some(t=>(r.title+" "+r.abstract).toLowerCase().includes(t))).length}));
+}
+function escapeHTML(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+function assess(app,props){
+ const needs=NEEDS[app],found=props.filter(p=>needs.includes(p.name)&&p.records>0),missing=needs.filter(n=>!found.some(p=>p.name===n));
+ let level=found.length>=Math.max(2,Math.ceil(needs.length*.65))?"Promising literature signals":found.length?"Some relevant evidence":"Insufficient evidence";
+ return `<span class="pill">${level}</span><p>${found.length?"Retrieved records mention "+found.map(p=>p.name.toLowerCase()).join(", ")+". These topics are relevant to "+app.toLowerCase()+".":"The retrieved records do not provide enough searchable evidence for the main functional requirements of "+app.toLowerCase()+"."}</p><p><strong>Evidence gaps:</strong> ${missing.length?missing.join(", "):"No major topic gaps detected in this search. Verify actual values and methods."}</p><p><strong>Interpretation:</strong> This is an early literature screen, not a validated performance prediction or a guarantee of finished-product performance.</p>`;
+}
+function render(ingredient,app,form,records){
+ const props=mentions(records),relevant=props.filter(p=>p.records);
+ $("resultTitle").textContent=ingredient+" research snapshot";$("resultMeta").textContent="Target: "+app+" · Form selected: "+form+" · Source: OpenAlex";$("paperCount").textContent=records.length+" scholarly records";
+ $("properties").innerHTML=relevant.length?relevant.map(p=>`<div class="property"><strong>${escapeHTML(p.name)}</strong><span>Mentioned in ${p.records} record(s)</span></div>`).join(""):'<div class="empty">No functional-property topics detected. Try a scientific name or broader search phrase.</div>';
+ $("assessment").innerHTML=assess(app,props);
+ $("papers").innerHTML=records.length?records.map(r=>`<article class="paper"><h4>${escapeHTML(r.title)}</h4><p>${escapeHTML(String(r.year))}${r.authors?" · "+escapeHTML(r.authors):""}</p><p>${escapeHTML(r.abstract.slice(0,500)+(r.abstract.length>500?"…":"")||"No abstract available in indexed record.")}</p><a href="${escapeHTML(r.url)}" target="_blank" rel="noopener noreferrer">Open source record ↗</a></article>`).join(""):'<div class="empty">No records found. Try another ingredient name or spelling.</div>';
+ $("results").classList.add("show");
+}
+async function searchIngredient(){
+ const ingredient=$("ingredient").value.trim(),app=$("application").value,form=$("form").value;if(!ingredient){status("Enter an ingredient name first.",true);return;}
+ const btn=$("searchBtn");btn.disabled=true;btn.textContent="Searching scholarly records…";status("Searching OpenAlex for "+ingredient+". Please wait.");
+ try{let records=await fetchResearch(`"${ingredient}" plant protein functional properties`);if(records.length<5)records=await fetchResearch(`${ingredient} functional properties protein flour`);render(ingredient,app,form,records);status("Search complete. Open and verify original studies before treating properties as confirmed.");}
+ catch(e){status(e.message+" Check your connection or try later.",true);}finally{btn.disabled=false;btn.textContent="Search research ↗";}
+}
+function loadExample(){const choices=["African yam bean","Bambara groundnut","Cowpea","Melon seed","Moringa seed","Soybean","Sesame"],current=$("ingredient").value;const i=choices.indexOf(current);$("ingredient").value=choices[(i+1+choices.length)%choices.length];}
+$("ingredient").addEventListener("keydown",e=>{if(e.key==="Enter")searchIngredient();});
+</script></body></html>

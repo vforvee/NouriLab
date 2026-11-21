@@ -1,0 +1,117 @@
+[
+  {
+    "id": "bambara",
+    "name": "Bambara groundnut",
+    "scientific_name": "Vigna subterranea",
+    "category": "African legume",
+    "origin": "West and Central Africa",
+    "description": "An underutilised African legume with potential for protein-rich food ingredients.",
+    "applications": [
+      "Plant-based milk",
+      "Burger",
+      "Meat analogue"
+    ]
+  },
+  {
+    "id": "cowpea",
+    "name": "Cowpea",
+    "scientific_name": "Vigna unguiculata",
+    "category": "African legume",
+    "origin": "Africa",
+    "description": "A widely cultivated pulse used in traditional foods and potential plant-protein applications.",
+    "applications": [
+      "Plant-based milk",
+      "Burger",
+      "Sausage"
+    ]
+  },
+  {
+    "id": "african-yam-bean",
+    "name": "African yam bean",
+    "scientific_name": "Sphenostylis stenocarpa",
+    "category": "African legume",
+    "origin": "Tropical Africa",
+    "description": "An underutilised legume of interest for food and protein ingredient research.",
+    "applications": [
+      "Burger",
+      "Meat analogue"
+    ]
+  },
+  {
+    "id": "egusi",
+    "name": "Egusi melon seed",
+    "scientific_name": "Citrullus species",
+    "category": "Oilseed",
+    "origin": "West Africa",
+    "description": "Oil-rich edible seeds used in West African cuisines. Confirm species identity for each sample.",
+    "applications": [
+      "Plant-based milk",
+      "Sauces",
+      "Burger"
+    ]
+  },
+  {
+    "id": "sesame",
+    "name": "Sesame",
+    "scientific_name": "Sesamum indicum",
+    "category": "Oilseed",
+    "origin": "Africa and Asia",
+    "description": "Oilseed ingredient; defatting and processing form can affect functionality.",
+    "applications": [
+      "Plant-based milk",
+      "Sauces",
+      "Protein blends"
+    ]
+  },
+  {
+    "id": "soybean",
+    "name": "Soybean",
+    "scientific_name": "Glycine max",
+    "category": "Legume",
+    "origin": "Cultivated globally",
+    "description": "Established plant protein source available in flour, concentrate and isolate forms.",
+    "applications": [
+      "Plant-based milk",
+      "Yoghurt",
+      "Burger",
+      "Sausage"
+    ]
+  },
+  {
+    "id": "pea",
+    "name": "Pea",
+    "scientific_name": "Pisum sativum",
+    "category": "Legume",
+    "origin": "Cultivated globally",
+    "description": "Widely used source for plant protein ingredients and alternative-protein products.",
+    "applications": [
+      "Plant-based milk",
+      "Yoghurt",
+      "Burger"
+    ]
+  },
+  {
+    "id": "chickpea",
+    "name": "Chickpea",
+    "scientific_name": "Cicer arietinum",
+    "category": "Legume",
+    "origin": "Cultivated globally",
+    "description": "Pulse explored for protein and functional ingredient applications.",
+    "applications": [
+      "Plant-based milk",
+      "Burger",
+      "Snacks"
+    ]
+  },
+  {
+    "id": "moringa",
+    "name": "Moringa seed",
+    "scientific_name": "Moringa oleifera",
+    "category": "Seed",
+    "origin": "Africa and Asia",
+    "description": "Research candidate requiring careful safety, antinutritional-factor and processing evaluation.",
+    "applications": [
+      "Research candidate"
+    ]
+  }
+]
